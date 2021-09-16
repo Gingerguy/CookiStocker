@@ -1,0 +1,12 @@
+{
+	"Name": "CookiStocker",
+	"ID": "gincookistocker",
+	"Author": "Gingerguy",
+	"Description": "he bo(ugh)t",
+	"ModVersion": 1.5,
+	"GameVersion": 2.042,
+	"Date": "14/09/2021",
+	"Dependencies": [],
+	"Disabled": 1,
+	"AllowSteamAchievs":1
+}
