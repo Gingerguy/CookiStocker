@@ -111,8 +111,9 @@ Game.registerMod("gincookistocker",{
 		console.log('Reading the market:');
 		stockList.startingProfits = Game.ObjectsById[5].minigame.profit;
 		for (let i = 0; i < market.length; i++){
+			var name=market[i].name.replace('%1',Game.bakeryName);
 			stockList.goods.push({
-		 		name: market[i].name,
+		 		name: name,
 		 		stock: market[i].stock,
 		 		restingPrice: 10*(i+1) + Game.ObjectsById[i].level - 1,
 		 		currentPrice: market[i].val,
@@ -120,7 +121,7 @@ Game.registerMod("gincookistocker",{
 				lastMode: market[i].mode,
 		 		priceBought: -1,
 			});
-			console.log('Stock: ' + market[i].name + ' Status: ' + modeDecoder[market[i].mode]);
+			console.log('Stock: ' + name + ' Status: ' + modeDecoder[market[i].mode]);
 		}
 
 		if (stockerActivityReport) {
